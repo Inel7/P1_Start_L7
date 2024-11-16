@@ -10,6 +10,7 @@ def welkom():
 
 def vraag_naam():
     naam = input("Geef een naam of typ 'stop' om te stoppen ")
+    return naam
 
 def toon_telefoon(naam):
     if naam in contacten :
@@ -19,6 +20,6 @@ def toon_telefoon(naam):
 
 def raadpleeg_telefoonboek(contacten):
     welkom()
-    vraag_naam()
+    naam=vraag_naam()
     toon_telefoon(naam)
 raadpleeg_telefoonboek(contacten)
